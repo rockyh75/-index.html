@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JOb</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="Z" href="https://www.wikipedia.org/" target="_blank">Home</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="overlay">
+        <figure>
+        <img src="./images/my dick.jpg" alt="Lulumon">
+        
+        <video src="./Video.mp4" width="200" height="200" controls>Video Failed</video>
+        <figcaption>This video helps you to sleep tight!</figcaption>
+    </figure>
+    <audio src="./Zinda.mp3" controls></audio>
+    <iframe src="https://giphy.com/embed/M3R0cGvpZv9gLyELOx" width="480" height="182" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lifehackorg-swipe-up-download-lifehack-M3R0cGvpZv9gLyELOx">via GIPHY</a></p>
+
+
+    <section id="main">
+        <h1>Job Application Form</h1><br>
+        <h4 title="Hakuna Matata">Kindly fill in the correct details inorder to meet the requirements.</h4><br>
+        <hr>
+
+        <form action="./submission.html" method="post">
+        <section class="name">
+             <label for="Name">What is your Full name?</label><br>
+            <input type="text" name="name" id="name" required><br>   
+        </section>
+        <section class="DOB">
+            <label for="Birthdate">What is yoru date of birth?</label>
+            <input type="date" name="DOB" id="birthdate"><br>  
+        </section>
+        <section class="gender">
+        <label for="gender">Gender: </label><br>
+            <input type="radio" name="gender" id="Male" value="Male" required>
+            <label for="Male">Male</label>             
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+        </section>
+        <section class="Contact">
+            <label for="contact">Phone Number (Tel/Mob): </label>
+            <select class="countrycodes">
+                <option value="Qatar">+974</option>
+                <option value="Dubai">+966</option>
+                <option value="Nepal">+977</option>
+            </select>
+            <input type="number" name="number" id="number" required placeholder="1231234">
+        </section>
+        <section class="previouscompanyname">
+            <label for="prev-company">Previous Company Name: </label>
+            <input type="text" name="previouscompanyname" id="prev-company" required>
+        </section>
+        <section class="Position">
+            <label for="pos">What position you are applying for?</label>
+            <select id="post" name="pos">
+                <option value="Accountant">Accountant</option>
+                <option value="Personal Assistant">Personal Assistant</option>
+                <option value="Clerk">Clerk</option>
+            </select>    
+        </section>
+        <Section class="salary">
+            <label for="Salaryrange">Salary Expected:</label>
+            <input type="text" id="salaryrange" name="salaryrange" list="salaries">
+            <datalist id="salaries">
+                <option value="Qr. 10000"></option>
+                <option value="Qr. 15000"></option>
+                <option value="QR. 20000"></option>
+            </datalist>
+            </Section>
+            <section class="Comment">
+                <label for="comment">Tell something about yourself: </label><br>
+                <textarea name="freewrite" id="" cols="30" rows="10"></textarea>
+            </section>
+        
+            <Section class="submission">
+                <input type="submit" value="Submit">
+            </Section>
+        </Section>
+    </form>  
+</body>
+</html>
